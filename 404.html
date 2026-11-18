@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#f5f3ee">
+  <title>Page not found | LMAC Customs</title>
+
+  <!-- Relative paths are intentional: this site is hosted at /LMAC/ on GitHub Pages. -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Italiana&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      color-scheme: light;
+      --ivory: #f5f3ee;
+      --green: #263a32;
+      --ink: #292b29;
+      --muted: #686a63;
+      --bronze: #9d8060;
+      --serif: "Italiana", Georgia, serif;
+      --sans: "DM Sans", Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { min-height: 100%; background: var(--ivory); }
+
+    body {
+      min-height: 100vh;
+      min-height: 100svh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      background: var(--ivory);
+      color: var(--ink);
+      font: 16px/1.65 var(--sans);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header { padding: 24px clamp(20px, 5vw, 76px); }
+
+    .brand { display: inline-flex; align-items: center; min-height: 44px; }
+    .brand img {
+      display: block;
+      width: clamp(140px, 16vw, 180px);
+      height: auto;
+    }
+
+    main {
+      flex: 1;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 12px 22px 56px;
+    }
+
+    .dog {
+      display: block;
+      width: min(100%, 540px);
+      max-height: 43vh;
+      height: auto;
+      object-fit: contain;
+      margin: 0 auto 8px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin: 0 0 14px;
+      color: var(--bronze);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+    .eyebrow::before, .eyebrow::after {
+      content: "";
+      width: 24px;
+      border-top: 1px solid var(--bronze);
+    }
+
+    h1 {
+      margin: 0 0 16px;
+      color: var(--ink);
+      font: 400 clamp(46px, 7vw, 82px)/1.08 var(--serif);
+      letter-spacing: -.015em;
+    }
+    h1 em { color: #b59a75; font-style: normal; }
+
+    .message {
+      max-width: 470px;
+      margin: 0 auto 28px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .button {
+      min-height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 25px;
+      border: 1px solid var(--green);
+      background: var(--green);
+      color: white;
+      font: 700 11px/1 var(--sans);
+      letter-spacing: .13em;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: background .2s ease, color .2s ease, transform .2s ease;
+    }
+    .button:hover { background: #354c40; transform: translateY(-1px); }
+    .button.outline { background: transparent; color: var(--green); }
+    .button.outline:hover { background: var(--green); color: white; }
+
+    a:focus-visible { outline: 2px solid var(--bronze); outline-offset: 4px; }
+
+    footer {
+      padding: 20px 22px 24px;
+      border-top: 1px solid rgb(38 58 50 / 12%);
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+    footer a {
+      color: var(--green);
+      text-decoration: none;
+      border-bottom: 1px solid var(--bronze);
+    }
+
+    @media (max-width: 520px) {
+      header { padding: 18px 20px; }
+      main { padding: 8px 20px 36px; }
+      .dog { width: min(100%, 410px); max-height: 36vh; margin-bottom: 10px; }
+      h1 { font-size: clamp(43px, 12vw, 60px); }
+      .message { max-width: 340px; font-size: 14px; }
+      .actions { width: 100%; max-width: 340px; flex-direction: column; }
+      .button { width: 100%; min-height: 50px; }
+      footer { padding: 18px 20px 22px; font-size: 12px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="brand" href="./" aria-label="LMAC Customs home">
+      <img src="logo.svg" width="900" height="330" alt="LMAC Customs">
+    </a>
+  </header>
+
+  <main>
+    <img
+      class="dog"
+      src="magnus.webp"
+      width="1400"
+      height="971"
+      alt="Watercolor illustration of Magnus, a spotted dog wearing a blue harness and carrying a stick"
+    >
+    <p class="eyebrow">Page not found</p>
+    <h1>This page <em>wandered off.</em></h1>
+    <p class="message">
+      Magnus went looking for it and came back with a stick.
+      In the meantime, let’s get you back to the work that matters.
+    </p>
+    <nav class="actions" aria-label="Helpful links">
+      <a class="button" href="./">Back to home</a>
+      <a class="button outline" href="./#contact">Start a project</a>
+    </nav>
+  </main>
+
+  <footer>
+    Looking for something specific?
+    <a href="tel:+12075837516">(207) 583-7516</a>
+    ·
+    <a href="mailto:brandon@lmaccustoms.com">brandon@lmaccustoms.com</a>
+  </footer>
+</body>
+</html>

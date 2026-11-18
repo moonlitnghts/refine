@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lmaccustoms.com/sitemap.xml

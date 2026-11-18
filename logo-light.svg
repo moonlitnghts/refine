@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 330" role="img" aria-labelledby="title desc">
+<title id="title">LMAC Customs</title>
+<desc id="desc">Forest green custom home roofline and evergreen emblem above LMAC Customs, with the words Build, Renovate, Transform.</desc>
+<defs>
+  <style>
+    .green{fill:#f5f3ee}.line{fill:none;stroke:#f5f3ee;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+    .gold{stroke:#9b8060;stroke-width:3}.serif{font-family:Georgia,'Times New Roman',serif}
+    .sans{font-family:Arial,Helvetica,sans-serif}
+  </style>
+</defs>
+<!-- Simplified custom-home roofline -->
+<g class="line">
+  <path d="M205 124 L450 24 L695 124"/>
+  <path d="M258 124 L450 48 L642 124"/>
+  <path d="M322 124 V89 L450 37 L578 89 V124"/>
+  <path d="M426 124 V91 H474 V124"/>
+  <path d="M443 124 V91 M457 91 V124"/>
+</g>
+<!-- Evergreen silhouettes -->
+<g class="green">
+  <path d="M150 124l18-24 11 8-12-20 10 4-15-22-14 22 10-4-12 20 10-8z"/>
+  <rect x="164" y="124" width="5" height="12"/>
+  <path d="M730 124l18-24 11 8-12-20 10 4-15-22-14 22 10-4-12 20 10-8z"/>
+  <rect x="744" y="124" width="5" height="12"/>
+</g>
+<path class="line" d="M116 137 H784"/>
+<text x="450" y="238" text-anchor="middle" class="green serif" font-size="126" letter-spacing="5">LMAC</text>
+<path class="gold" d="M172 266 H300 M600 266 H728"/>
+<text x="450" y="282" text-anchor="middle" class="green serif" font-size="43" letter-spacing="15">CUSTOMS</text>
+<text x="450" y="319" text-anchor="middle" class="green sans" font-size="17" letter-spacing="7">BUILD  •  RENOVATE  •  TRANSFORM</text>
+</svg>
