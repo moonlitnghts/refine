@@ -13,3 +13,6 @@
 - Preserved the existing pages, project photographs, LMAC logos, domain file, and GitHub Pages-friendly static architecture.
 
 No framework, build step, or package installation is required. Upload the contents of this folder to the repository as usual.
+
+### Contact section copy
+- Updated the closing invitation to: “Let's build something meaningful, together.”
