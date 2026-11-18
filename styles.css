@@ -80,3 +80,68 @@ button,input,select,textarea{font:inherit}
   .steps .welcome-step p{font-size:12px}
   .welcome-signoff{font-size:16px}
 }
+
+/* Welcome Home: a quiet, refined emphasis that stays in step with the process. */
+.steps .welcome-step{
+  display:grid;
+  grid-template-columns:54px minmax(0,1fr);
+  align-items:start;
+  gap:16px;
+  margin:12px 0 0;
+  padding:22px 22px 21px;
+  overflow:visible;
+  border:1px solid rgba(38,58,50,.12);
+  border-left:3px solid var(--bronze);
+  background:linear-gradient(100deg,rgba(180,154,112,.09),rgba(180,154,112,.025));
+  box-shadow:none;
+}
+.steps .welcome-step:after{display:none}
+.steps .welcome-step .step-number{
+  display:block;
+  width:auto;
+  height:auto;
+  border:0;
+  border-radius:0;
+  color:var(--bronze);
+  font:25px/1.2 var(--serif);
+}
+.steps .welcome-step .welcome-content{min-width:0}
+.steps .welcome-step .welcome-kicker{
+  display:block;
+  margin:0 0 4px;
+  color:#82704f;
+  font:600 9px/1.5 var(--sans);
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+.steps .welcome-step h3.welcome{
+  display:block;
+  margin:0 0 7px;
+  color:var(--green);
+  font:30px/1.12 var(--serif);
+  font-weight:400;
+  letter-spacing:-.02em;
+}
+.steps .welcome-step .welcome-period{color:var(--bronze)}
+.steps .welcome-step p{
+  max-width:510px;
+  margin:0;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.8;
+}
+.steps .welcome-step .welcome-signoff{
+  display:inline-block;
+  margin-top:8px;
+  padding:0;
+  border:0;
+  color:var(--green);
+  font:italic 16px/1.4 var(--serif);
+}
+@media(max-width:700px){
+  .steps .welcome-step{grid-template-columns:42px minmax(0,1fr);gap:10px;margin-top:10px;padding:18px 15px}
+  .steps .welcome-step .step-number{font-size:23px}
+  .steps .welcome-step h3.welcome{font-size:28px}
+  .steps .welcome-step .welcome-kicker{font-size:8px}
+  .steps .welcome-step p{font-size:12px}
+}
