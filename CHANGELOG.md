@@ -21,3 +21,7 @@ No framework, build step, or package installation is required. Upload the conten
 ## Footer update
 - Added a 90×90 Equal Opportunity Employer logo to the footer across the main site pages.
 - Linked the logo to the State of Maine Non-Discrimination Policy PDF, opening in a new tab.
+
+
+## Legal footer update
+- Added “LMAC Enterprises LLC is an Equal Opportunity Employer.” to the footer fine print across the main website pages.
