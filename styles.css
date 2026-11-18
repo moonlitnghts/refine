@@ -54,3 +54,29 @@ button,input,select,textarea{font:inherit}
 .welcome-step h3.welcome{display:inline-block;margin:0 0 8px;color:var(--green);font-size:clamp(29px,3vw,36px);font-weight:600;letter-spacing:-.025em}
 .welcome-step p{max-width:520px}
 @media(max-width:700px){.footer-badges{grid-template-columns:90px 90px;gap:14px}.welcome-step{margin-top:8px;padding:19px 16px}.welcome-step h3.welcome{font-size:31px}}
+
+
+/* Welcome Home — make the final milestone feel like the finish line. */
+.steps .welcome-step{
+  position:relative;isolation:isolate;display:grid;grid-template-columns:82px minmax(0,1fr);align-items:center;gap:22px;
+  margin:24px 0 0;padding:34px 34px 32px;overflow:hidden;
+  border:1px solid rgba(180,154,112,.55);border-left:5px solid var(--bronze);
+  background:linear-gradient(118deg,#1b2a24 0%,#263a32 62%,#354b40 100%);
+  box-shadow:0 18px 42px rgba(27,42,36,.16);
+}
+.steps .welcome-step:after{position:absolute;z-index:-1;right:-45px;bottom:-112px;width:300px;height:300px;border:1px solid rgba(213,196,166,.18);border-radius:50%;content:"";box-shadow:0 0 0 28px rgba(213,196,166,.035),0 0 0 58px rgba(213,196,166,.025)}
+.steps .welcome-step .step-number{display:flex;width:76px;height:76px;align-items:center;justify-content:center;border:1px solid rgba(213,196,166,.48);border-radius:50%;color:#d5c4a6;font:38px/1 var(--serif)}
+.welcome-content{position:relative;z-index:1}
+.welcome-kicker{display:block;margin:0 0 8px;color:#d5c4a6;font:700 9px/1.4 var(--sans);letter-spacing:.23em;text-transform:uppercase}
+.steps .welcome-step h3.welcome{display:block;margin:0 0 10px;color:#fbfaf6;font:clamp(39px,5vw,58px)/.98 var(--serif);font-weight:400;letter-spacing:-.035em}
+.welcome-period{color:#d5c4a6}
+.steps .welcome-step p{max-width:510px;color:rgba(251,250,246,.78);font-size:13px;line-height:1.85}
+.welcome-signoff{display:inline-block;margin-top:13px;padding-top:10px;border-top:1px solid rgba(213,196,166,.38);color:#d5c4a6;font:italic 18px/1.3 var(--serif)}
+@media(max-width:700px){
+  .steps .welcome-step{grid-template-columns:52px minmax(0,1fr);gap:14px;margin-top:18px;padding:24px 17px 23px}
+  .steps .welcome-step .step-number{width:50px;height:50px;font-size:26px}
+  .steps .welcome-step h3.welcome{font-size:clamp(34px,9vw,45px)}
+  .welcome-kicker{font-size:8px;letter-spacing:.17em}
+  .steps .welcome-step p{font-size:12px}
+  .welcome-signoff{font-size:16px}
+}
